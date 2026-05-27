@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBGCQR572F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBGCQR572F');
+</script>	
+	<meta name="color:Body background" content="#0d0e12" />
+
+	<meta name="color:Post title" content="#00e5ff" />
+	<meta name="color:Post links" content="#00e5ff" />
+	<meta name="color:Post text" content="#e0e6ed" />
+	<meta name="color:Post background" content="#161920" />
+	<meta name="color:Text widget background" content="#1f2430" />
+
+	<meta name="color:Masthead title" content="#00e5ff" />
+	<meta name="color:Masthead links" content="#a0aec0" />
+	<meta name="color:Masthead text" content="#cbd5e0" />
+	<meta name="color:Masthead background" content="#0d0e12" />
+
+	<meta name="color:Accent" content="#00e5ff" />
+	<meta name="color:Primary masthead effect" content="#00e5ff" />
+	<meta name="color:Secondary masthead effect" content="#ff007f" />
+	<meta name="color:Primary post hover effect" content="#1f2430" />
+	<meta name="color:Secondary post hover effect" content="#00e5ff" />
+
+	<meta name="color:Menu bar button" content="#00e5ff" />
+	<meta name="color:Menu bar background" content="#161920" />
+	<meta name="color:Menu bar links" content="#00e5ff" />
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>Jayden Mahuron - Log Entries Database</title>
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//static.tumblr.com/wgijwsy/YZomlhwl6/normalize.min.css" rel="stylesheet" type="text/css" />
+<style>
+/* ==========================================================================
+   TERMINAL / WINDOWS XP / MACOS GLASS SYSTEM OVERRIDES
+   ========================================================================== */
+:root {
+    --electric-blue: #00e5ff;
+    --sapphire-red: #ff0055;
+    --egg-yolk-yellow: #ffea00;
+    --terminal-green: #39ff14;
+    --dark-bg: #07080b;
+    --card-bg: rgba(16, 20, 30, 0.75);
+    --window-top: rgba(30, 37, 54, 0.9);
+    --primary-font: 'New Order Light', sans-serif;
+    --secondary-font: 'aurabresh', 'OCR A Extended', monospace, sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    font-family: var(--primary-font);
+    background-color: var(--dark-bg) !important;
+    background-image: linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px) !important;
+    background-size: 20px 20px !important;
+}
+
+body {
+    height: 101%;
+    line-height: 160%;
+    overflow-y: scroll;
+    background: transparent !important;
+    color: #e0e6ed !important;
+}
+
+#page {
+    background: transparent !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 20px 140px 20px !important;
+}
+
+/* SLEEK SYSTEM SEARCH TOOL */
+.system-search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.system-search-form {
+    display: flex;
+    align-items: center;
+    background: rgba(7, 8, 11, 0.6);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 6px;
+    padding: 6px 12px;
+    width: 280px;
+    transition: all 0.3s ease;
+}
+.system-search-form:focus-within {
+    border-color: var(--electric-blue);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+.system-search-input {
+    background: transparent;
+    border: none;
+    color: #cbd5e0;
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    outline: none;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.system-search-btn {
+    background: transparent;
+    border: none;
+    color: var(--electric-blue);
+    cursor: pointer;
+    padding: 0 0 0 5px;
+    font-size: 12px;
+}
+
+/* SYSTEM FOLDER FILTER CONTROLS */
+.system-folders-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 10px 0;
+    font-family: var(--secondary-font);
+}
+.folder-tab {
+    background: rgba(16, 20, 30, 0.5);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px 16px;
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.folder-tab i {
+    font-size: 12px;
+}
+.folder-tab:hover {
+    color: var(--electric-blue);
+    background: rgba(16, 20, 30, 0.8);
+}
+.folder-tab.is-active {
+    color: #000;
+    background: var(--electric-blue) !important;
+    border-color: var(--electric-blue);
+    font-weight: bold;
+    box-shadow: 0 -4px 10px rgba(0, 229, 255, 0.2);
+}
+
+/* OS Window Container Style (Post Articles) */
+article, .permalink article {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(20px) saturate(1.5);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    border: 2px solid rgba(0, 229, 255, 0.3) !important;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
+                inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease !important;
+    margin-bottom: 60px !important;
+    padding: 0 !important; 
+    width: 100% !important;
+    float: none !important;
+    overflow: hidden;
+}
+
+article:hover {
+    border-color: var(--electric-blue) !important;
+    box-shadow: 0 25px 60px rgba(0, 229, 255, 0.25),
+                0 0 15px rgba(0, 229, 255, 0.1) !important;
+    transform: translateY(-2px);
+}
+
+/* Post Window Content Padding */
+article .post-wrapper {
+    padding: 25px 30px 30px 30px !important;
+}
+
+/* 5 Inch Height Restrictions & Expansion Module */
+.collapsible-post-body {
+    max-height: 480px; /* ~5 inches high */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.collapsible-post-body.is-expanded {
+    max-height: none !important;
+}
+.collapsible-post-body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, rgba(16, 25, 32, 0.95));
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.collapsible-post-body.is-expanded::after {
+    opacity: 0;
+}
+.post-expand-btn {
+    display: none;
+    background: transparent;
+    border: 1px dashed var(--electric-blue);
+    color: var(--electric-blue);
+    font-family: var(--secondary-font);
+    padding: 8px 16px;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+.post-expand-btn:hover {
+    background: rgba(0, 229, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+/* Integrated System Comment Engine UI */
+.system-comment-section {
+    border-top: 1px solid rgba(0, 229, 255, 0.15);
+    margin-top: 25px;
+    padding-top: 20px;
+    font-family: var(--secondary-font);
+}
+.comment-header {
+    font-size: 12px;
+    color: var(--terminal-green);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.comment-box-input {
+    width: 100%;
+    background: rgba(7, 8, 11, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 10px;
+    color: #cbd5e0;
+    font-family: var(--primary-font);
+    font-size: 13px;
+    resize: vertical;
+    outline: none;
+}
+.comment-box-input:focus {
+    border-color: var(--electric-blue);
+}
+.comment-submit-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+.comment-submit-btn {
+    background: transparent;
+    border: 1px solid var(--electric-blue);
+    color: var(--electric-blue);
+    padding: 4px 14px;
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.comment-submit-btn:hover {
+    background: var(--electric-blue);
+    color: #000;
+}
+
+/* XP/MacOS Hybrid Title Window Top Bar */
+.window-titlebar {
+    background: linear-gradient(to bottom, var(--window-top) 0%, rgba(20, 26, 38, 0.95) 100%);
+    border-bottom: 2px solid rgba(0, 229, 255, 0.2);
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.window-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.5);
+}
+.dot-close { background-color: #ff5f56; border: 1px solid #e0443e; }
+.dot-minimize { background-color: #ffbd2e; border: 1px solid #dea123; }
+.dot-maximize { background-color: #27c93f; border: 1px solid #1aab29; }
+
+.window-sysinfo {
+    font-size: 11px;
+    color: var(--electric-blue);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0,229,255,0.4);
+}
+
+/* Header Adjustments */
+.top-blog-header {
+    background-color: rgba(13, 15, 22, 0.8) !important;
+    border: 2px dashed rgba(0, 229, 255, 0.2);
+    border-radius: 12px;
+    text-align: center !important;
+    padding: 40px 20px !important;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+/* PFP Fixing Reflection Cut-off Issues */
+.avatar-wrapper {
+    overflow: visible !important;
+    display: inline-block;
+}
+.user-avatar {
+    display: inline-block !important;
+    overflow: visible !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.blog-title a {
+    color: var(--electric-blue) !important;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+    font-family: var(--secondary-font);
+    text-decoration: none;
+}
+
+.description {
+    color: #a0aec0 !important;
+    font-family: var(--secondary-font);
+}
+
+.body-text, .post-content, p, li, h2, h3, h4 {
+    color: #cbd5e0 !important;
+}
+
+a {
+    color: var(--electric-blue) !important;
+}
+
+/* Metadata Blueprint Code Stamps */
+.custom-post-stamp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--terminal-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background: rgba(57, 255, 20, 0.05);
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    width: max-content;
+}
+
+/* Container setups */
+.container, .main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+#posts {
+    padding-top: 20px !important;
+}
+
+/* ==========================================================================
+   MACOS LIQUID GLASS FLOATING TASKBAR / DOCK
+   ========================================================================== */
+.nav-wrapper.nav-responsive {
+    position: static !important;
+    height: 0 !important;
+    overflow: visible !important;
+}
+
+.inline-nav {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: rgba(15, 20, 30, 0.35) !important;
+    backdrop-filter: blur(40px) brightness(1.5) contrast(1.2) saturate(1.7) !important;
+    -webkit-backdrop-filter: blur(40px) brightness(1.5) contrast(1.2) saturate(1.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding: 12px 22px !important;
+    border-radius: 30px !important;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85), 
+                inset 0 2px 4px rgba(255, 255, 255, 0.4),
+                inset 0 -2px 6px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(0, 229, 255, 0.15) !important;
+    z-index: 999999 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    margin: 0 !important;
+    width: max-content !important;
+    list-style: none !important;
+}
+
+/* Fluid Highlight Overlay */
+.inline-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 92%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.02) 100%);
+    border-radius: 30px 30px 8px 8px;
+    pointer-events: none;
+}
+
+.inline-nav li {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.inline-nav li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    border: 2px solid var(--electric-blue) !important;
+    color: var(--electric-blue) !important;
+    font-family: var(--secondary-font) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                background 0.2s ease, 
+                border-color 0.2s ease,
+                box-shadow 0.2s ease !important;
+    position: relative !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4),
+                inset 0 1px 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Spherical Gel Reflection */
+.inline-nav li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+/* Hover Physics Engine Trigger */
+@keyframes dock-pulse-wave {
+    0% { transform: translateY(0) scale(1.15); }
+    50% { transform: translateY(-6px) scale(1.18); }
+    100% { transform: translateY(0) scale(1.15); }
+}
+
+.inline-nav li a:hover {
+    background: var(--sapphire-red) !important;
+    border-color: var(--egg-yolk-yellow) !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px var(--sapphire-red), 
+                0 0 15px var(--egg-yolk-yellow),
+                inset 0 1px 4px rgba(255,255,255,0.5) !important;
+    animation: dock-pulse-wave 0.6s infinite ease-in-out !important;
+    text-shadow: 0 0 6px rgba(255,255,255,0.8);
+    cursor: pointer !important;
+}
+
+/* Interactive Hover Tooltips */
+.inline-nav li a::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 68px;
+    background: rgba(10, 14, 23, 0.95);
+    color: var(--egg-yolk-yellow);
+    border: 1px solid var(--electric-blue);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    font-family: var(--secondary-font);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.inline-nav li a:hover::after {
+    opacity: 1 !important;
+}
+
+#masthead{font-family: var(--secondary-font);position:relative;display:inline-block}*{word-wrap:break-word;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}nav ul,.metadata ul,.chat ul,.notes,.tumblr-share ul,.global-share ul,footer ul,.photo .exif,.post-hover,.post-text-hover,.no-post-hover{list-style:none;margin:0;padding:0}nav{display:inline-block}nav form{padding:1%}h1,h2,h3,h4,h5,h6{font-weight:400;margin:.3em 0}h1{font-size:1.5em}h2{font-size:1.3em}h3{font-size:1.1em}h4{font-size:1em}#site-name{line-height:150%}.hidden{display:none}.widget{position:relative;z-index:2}#masthead #search{display:inline-block}#masthead #search form input{opacity:.8;transition:all 1s ease-in;-webkit-transition:all 1s ease-in;-moz-transition:all 1s ease-in;border:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:font-family:inherit;line-height:200%;outline:0;background:0}#masthead #search form input:hover{opacity:1}#pages nav,#masthead #site-info{width:100%}#pages nav li a{display:inline-block}.intro{font-size:2em;background:var(--card-bg)!important}.intro p{line-height:150%}.entry-title{font-size:1.2em;margin:0;line-height:150%;margin:.5em 0 1em 0}.link .entry-title a{border-bottom:2px solid var(--electric-blue)!important}.layout-images{margin-bottom:-3px;padding:3px 3px 0}.no-layout-images .photo-url img{margin-bottom:1em}.no-layout-images .photo-url:last-child img{margin-bottom:0}.type-photoset .no-layout .inner{margin-top:.5em}.chat .label{font-weight:700;letter-spacing:.1em;text-transform:uppercase}article img{vertical-align:bottom;max-width:100%;height:auto;border-radius:8px}article .inner{display:inline-block;width:100%;margin-top:2%}article .inner p:first-child{margin-top:0}article .inner p:last-child{margin-bottom:0}.entry-title-centered .asker{text-align:center}.photo .label{margin:1% 1% 0 0;text-align:center;display:inline-block;font-weight:700}.index .photo-url{text-align:center}.quote blockquote{margin:0;padding:10%;margin-bottom:.5em;border:2px solid var(--electric-blue)}.answer .asker{margin:0 0 3%}.audio .entry-title{margin-bottom:3%}.chat ul li:first-child{padding-top:0}.chat ul li:last-child{padding-bottom:0}.index .chat li{padding:2% 0}.permalink .chat li{padding:1% 0}.chat li:last-child{border-bottom:0}.metadata ul{display:inline-block;width:100%}.metadata ul li a{float:left} .tumblr-share{width:50px!important;height:20px;float:right}.tumblr-share a{margin-left:5px} .permalink .tumblr-share,.permalink #notes_label{width:50%!important;margin:1em 0 0!important}.index .metadata .tags{margin:4% 0;word-break:break-all}.index article footer.inner{padding:0;border:0;margin:0;display:block;font-size:.9em}.index article footer.tags-enabled,.index article footer.permalink-label-enabled,.index article footer.note-count-enabled,.index article footer.like-buttons-enabled{display:inline-block;padding-top:1em;vertical-align:top}.post-note-divider{display:inline-block;width:4px;height:1em}.index footer.inner p{margin:0}.tumblr-share li{float:right;margin-left:2%;position:relative;z-index:100}.global-share li{display:inline;float:left;margin-right:1em;padding:.5em 0}#notes_label,#permalink_label{float:left}#permalink_label{cursor:pointer}.content_source{float:right}footer.metadata.inner.like-buttons-enabled.permalink-label-disabled .tumblr-share{width:100%!important;text-align:center}footer.metadata.inner.like-buttons-enabled.permalink-label-disabled .tumblr-share li{float:none;display:inline-block}.permalink .post-hover,.permalink .post-text-hover{display:inline-block;width:100%}.permalink .source.icon{float:right;margin-left:2%}.permalink .permalink.icon{float:left}#notes{width:100%;float:left}.notes{clear:both}.notes li{margin-bottom:1.5%}.notes .avatar{vertical-align:middle;border-radius:50%;margin-right:.5em}.tags{display:inline-block;width:100%}.tags li a{margin:0 1.5% 0 0}.search_query{font-weight:700}.index #wrapper{margin:0 auto}#pagination{width:100%;text-align:center;display:inline-block;margin-top:20px;margin-bottom:40px}#pagination li{display:inline;text-align:center}#pagination a{padding:1em 2em;display:inline-block;margin:0 1em 2em;background:var(--card-bg);color:var(--electric-blue);border:1px solid rgba(0,229,255,0.3);border-radius:8px}
+
+/* Unified Platform System Custom Footer */
+.custom-system-footer {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: #a0aec0;
+    font-size: 12px;
+    padding: 40px 20px;
+    line-height: 1.8;
+    border-top: 1px dashed rgba(0, 229, 255, 0.2);
+    margin-top: 60px;
+}
+.custom-system-footer a {
+    color: var(--electric-blue) !important;
+    text-decoration: none;
+}
+.custom-system-footer .terminal-tag {
+    color: var(--sapphire-red);
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+<body class="index-page">
+
+    <section id="page" class="h-feed">
+        <div class="header-wrapper">
+            <header id="header" class="top-blog-header">
+                <div class="blog-title-wrapper content">
+                    <figure class="avatar-wrapper animate p-author h-card">
+                        <a href="/" class="user-avatar" style="background-image: url('avatar.png');">
+                            <img src="avatar.png" alt="User Avatar" class="print-only invisible">
+                        </a>
+                    </figure>
+
+                    <div class="title-group animate">
+                        <h1 class="blog-title p-name"><a href="/">JPCRAZ-E</a></h1>
+                        <span class="description p-summary">
+                            Welcome to the mainframe terminal. Projects, stories, and database archives live here.
+                        </span>
+                    </div>
+                    
+                    <div class="system-search-container">
+                        <form action="#" method="get" class="system-search-form" onsubmit="event.preventDefault();">
+                            <input type="text" name="q" placeholder="SYS_SEARCH_DATABASE..." class="system-search-input">
+                            <button type="submit" class="system-search-btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="nav-wrapper nav-responsive">
+            <nav class="nav-menu">
+                <ul class="inline-nav">
+                    <li class="nav-item nav-item--posts">
+                        <a href="/" class="label" data-title="Posts">Pst</a>
+                    </li>
+                    <li class="nav-item nav-item--archive">
+                        <a href="#" class="label external-page" data-title="Archive">Arc</a>
+                    </li>
+                    <li class="nav-item nav-item--deviantart">
+                        <a href="https://deviantart.com/jurassicparkcraz-e" target="_blank" class="label" data-title="DeviantArt">DA</a>
+                    </li>
+                    <li class="nav-item nav-item--wattpad">
+                        <a href="https://www.wattpad.com/user/jurassicparkcraz-e" target="_blank" class="label" data-title="Wattpad">WP</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="system-folders-nav">
+            <div class="folder-tab is-active" data-folder="all"><i class="fa fa-folder-open"></i> All Log Entries</div>
+            <div class="folder-tab" data-folder="artwork"><i class="fa fa-paint-brush"></i> Artwork</div>
+            <div class="folder-tab" data-folder="fanfiction"><i class="fa fa-book"></i> JP: A New Dawn</div>
+            <div class="folder-tab" data-folder="bts"><i class="fa fa-gears"></i> Behind The Scenes</div>
+        </nav>
+
+        <section id="posts" class="content clearfix">
+            <div class="container">
+                <div class="main">
+
+                    <article data-post-id="817337861541101568">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="window-dot dot-close"></span>
+                                <span class="window-dot dot-minimize"></span>
+                                <span class="window-dot dot-maximize"></span>
+                            </div>
+                            <div class="window-sysinfo">sys_post_artwork_01.log</div>
+                        </div>
+
+                        <div class="post-wrapper clearfix h-entry">
+                            <section class="post">
+                                <div class="custom-post-stamp">
+                                    <i class="fa fa-clock-o"></i> 2 hours ago (Tuesday, May 26 2026)
+                                </div>
+
+                                <div class="collapsible-post-body">
+                                    <div class="post-content">
+                                        <h2 class="title p-name system-post-title"><a href="#">Welcome to Jurassic Park</a></h2>
+                                        <figure class="photo-wrapper">
+                                            <img class="u-photo" src="artwork1.jpg" alt="Welcome to Jurassic Park Art">
+                                        </figure>
+                                        <div class="body-text e-content">
+                                            <p>A brand new production piece showcasing the classic arrival. Working with ambient lighting scales to enhance the deep jungle environment shadows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="post-expand-btn">▼ [ Read More ]</button>
+
+                                <div class="system-tags-hidden" style="display:none;">#art #illustration</div>
+
+                                <div class="system-comment-section">
+                                    <div class="comment-header"><i class="fa fa-comments"></i> SYSTEM_COMMENTS // terminal_user</div>
+                                    <textarea class="comment-box-input" rows="2" placeholder="Write to system database..."></textarea>
+                                    <div class="comment-submit-row">
+                                        <button class="comment-submit-btn">Execute Post</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article data-post-id="000002">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="window-dot dot-close"></span>
+                                <span class="window-dot dot-minimize"></span>
+                                <span class="window-dot dot-maximize"></span>
+                            </div>
+                            <div class="window-sysinfo">sys_post_fanfic_01.log</div>
+                        </div>
+
+                        <div class="post-wrapper clearfix h-entry">
+                            <section class="post">
+                                <div class="custom-post-stamp">
+                                    <i class="fa fa-clock-o"></i> 3 days ago (Saturday, May 23 2026)
+                                </div>
+
+                                <div class="collapsible-post-body">
+                                    <div class="post-content">
+                                        <h2 class="title p-name system-post-title"><a href="#">JP: A New Dawn - Epi 1</a></h2>
+                                        <div class="body-text e-content">
+                                            <p>The air on Isla Nublar carried an ominous stillness before the engines roared back to life...</p>
+                                            <p>This long-form chapter content layout sets up the initial environment profiles for the operations team navigating the perimeter grid collapse. (Add more text here to watch the custom 5-inch expansion module activate when it overflows the threshold!).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="post-expand-btn">▼ [ Read More ]</button>
+
+                                <div class="system-tags-hidden" style="display:none;">#fanfiction #jpanewdawn</div>
+
+                                <div class="system-comment-section">
+                                    <div class="comment-header"><i class="fa fa-comments"></i> SYSTEM_COMMENTS // terminal_user</div>
+                                    <textarea class="comment-box-input" rows="2" placeholder="Write to system database..."></textarea>
+                                    <div class="comment-submit-row">
+                                        <button class="comment-submit-btn">Execute Post</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+
+                    <article data-post-id="000003">
+                        <div class="window-titlebar">
+                            <div class="window-controls">
+                                <span class="window-dot dot-close"></span>
+                                <span class="window-dot dot-minimize"></span>
+                                <span class="window-dot dot-maximize"></span>
+                            </div>
+                            <div class="window-sysinfo">sys_post_bts_01.log</div>
+                        </div>
+
+                        <div class="post-wrapper clearfix h-entry">
+                            <section class="post">
+                                <div class="custom-post-stamp">
+                                    <i class="fa fa-clock-o"></i> Last week (May 19 2026)
+                                </div>
+
+                                <div class="collapsible-post-body">
+                                    <div class="post-content">
+                                        <h2 class="title p-name system-post-title"><a href="#">Dev Diary: Asset System Blueprint</a></h2>
+                                        <div class="body-text e-content">
+                                            <p>Re-organizing configuration data matrices to work reliably across clean environments. Testing new automation rules for file classifications directly inside the site engine framework.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="post-expand-btn">▼ [ Read More ]</button>
+
+                                <div class="system-tags-hidden" style="display:none;">#development #log</div>
+
+                                <div class="system-comment-section">
+                                    <div class="comment-header"><i class="fa fa-comments"></i> SYSTEM_COMMENTS // terminal_user</div>
+                                    <textarea class="comment-box-input" rows="2" placeholder="Write to system database..."></textarea>
+                                    <div class="comment-submit-row">
+                                        <button class="comment-submit-btn">Execute Post</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="custom-system-footer">
+        © 2026 Jayden Mahuron. All Rights Reserved.<br>
+        Contact: <a href="mailto:jaydenmahuron@outlook.com">jaydenmahuron@outlook.com</a>
+        <span class="terminal-tag">>///LifeFindsAWay>///</span>
+    </footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            // Execution engine for content parsing heights & dynamic buttons
+            $('.collapsible-post-body').each(function() {
+                var $this = $(this);
+                if ($this[0].scrollHeight > 485) {
+                    $this.next('.post-expand-btn').css('display', 'block');
+                }
+            });
+
+            $('.post-expand-btn').on('click', function() {
+                var $btn = $(this);
+                var $container = $btn.prev('.collapsible-post-body');
+                
+                if ($container.hasClass('is-expanded')) {
+                    $container.removeClass('is-expanded');
+                    $btn.text('▼ [ Read More ]');
+                } else {
+                    $container.addClass('is-expanded');
+                    $btn.text('▲ [ Collapse ]');
+                }
+            });
+
+            // AUTOMATIC SYSTEM FOLDERS ENGINE
+            $('article').each(function() {
+                var $post = $(this);
+                var tagText = $post.find('.system-tags-hidden').text().toLowerCase();
+                var postTitle = $post.find('.system-post-title').text().toLowerCase();
+                var postId = $post.data('post-id') ? $post.data('post-id').toString() : '';
+                
+                // Rules definitions
+                var isArt = tagText.indexOf('#art') !== -1 || postTitle.indexOf('welcome to jurassic park') !== -1 || postTitle.indexOf('under the weight of water') !== -1 || postId === '817337861541101568';
+                var isFanfic = tagText.indexOf('#fanfiction') !== -1 || postTitle.indexOf('epi 1') !== -1;
+                
+                // Assigning System Classification Classes
+                if (isArt) {
+                    $post.addClass('sys-folder-artwork');
+                } else if (isFanfic) {
+                    $post.addClass('sys-folder-fanfiction');
+                } else {
+                    $post.addClass('sys-folder-bts');
+                }
+            });
+
+            // Folder Switch Filtering Logic
+            $('.folder-tab').on('click', function() {
+                var $tab = $(this);
+                var targetFolder = $tab.data('folder');
+                
+                $('.folder-tab').removeClass('is-active');
+                $tab.addClass('is-active');
+                
+                if (targetFolder === 'all') {
+                    $('article').fadeIn(200);
+                } else {
+                    $('article').hide();
+                    $('article.sys-folder-' + targetFolder).fadeIn(200);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
